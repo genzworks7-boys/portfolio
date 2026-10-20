@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Connect with GEN-Z'WORKS. Start a project, request a consultation, or send inquiries for Web Development, Academic Projects, Poster Design, Video Editing, or Copywriting.">
+  <meta name="keywords" content="GEN-Z'WORKS, Contact GEN-Z'WORKS, Start a Project, Client Feedback, Web Development Quote, Academic Projects, Instagram QR Code">
+  <title>Contact &amp; Feedback | GEN-Z'WORKS - Let's Turn Ideas Into Impact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/star-icon.png" type="image/png">
+  <style>
+    .contact-us-panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(244,247,249,0.9));
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-us-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 4px;
+      background: var(--brand-gradient);
+    }
+
+    .contact-us-title {
+      font-size: 1.65rem;
+      color: var(--poster-navy);
+      margin-bottom: 0.7rem;
+    }
+
+    .contact-us-desc {
+      font-size: 0.97rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .contact-us-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-us-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      padding: 1rem 1rem 0.9rem;
+      border: 1px solid rgba(42, 63, 77, 0.08);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,0.8);
+    }
+
+    .contact-us-icon {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      background: rgba(0, 184, 217, 0.1);
+      color: var(--poster-cyan);
+    }
+
+    .contact-us-item:nth-child(2) .contact-us-icon {
+      background: rgba(22, 113, 208, 0.08);
+      color: var(--color-accent-blue);
+    }
+
+    .contact-us-item:nth-child(3) .contact-us-icon {
+      background: rgba(255, 107, 0, 0.08);
+      color: var(--poster-orange);
+    }
+
+    .contact-us-item h5 {
+      font-size: 0.92rem;
+      margin-bottom: 0.28rem;
+      color: var(--poster-navy);
+    }
+
+    .contact-us-item p,
+    .contact-us-item a {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .contact-us-item a:hover {
+      color: #1671d0;
+    }
+
+    .contact-us-note {
+      padding: 1rem 1.1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(0, 184, 217, 0.22);
+      background: rgba(0, 184, 217, 0.06);
+      color: var(--poster-navy);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .contact-us-note strong {
+      color: var(--poster-navy);
+    }
+
+    @media (max-width: 760px) {
+      .contact-us-panel {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Ambient Background Lighting -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- Fixed Navigation Bar -->
+  <header class="navbar" id="siteNavbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="GEN-Z WORKS">
+        <img src="images/logo-transparent.png" alt="GEN-Z WORKS FREELANCE COMPANY" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="team.html" class="nav-link" id="nav-team">Team Members</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">Contact Us</a></li>
+          <li><a href="feedback.html" class="nav-link active" id="nav-feedback">Feedback</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <img src="images/nav-character.png" alt="" class="nav-cta-image" aria-hidden="true">
+        <a href="feedback.html" class="btn btn-primary btn-sm" id="nav-cta-btn">Start a Project</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Marquee Ticker Strip -->
+  <div class="marquee-strip" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-content">
+        <span class="marquee-item">We Design</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Develop</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Create</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Deliver</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Design</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Develop</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Create</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Deliver</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Design</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Develop</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Create</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Deliver</span>
+        <span class="marquee-dot">✦</span>
+      </span>
+      <span class="marquee-content" aria-hidden="true">
+        <span class="marquee-item">We Design</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Develop</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Create</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Deliver</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Design</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Develop</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Create</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Deliver</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Design</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Develop</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Create</span>
+        <span class="marquee-dot">✦</span>
+        <span class="marquee-item">We Deliver</span>
+        <span class="marquee-dot">✦</span>
+      </span>
+    </div>
+  </div>
+
+  <main style="padding-top: 2rem;">
+    <section class="section-spacing feedback-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge">
+            <span>Contact Us</span>
+          </div>
+          <h1 class="section-title">
+            HAVE QUESTIONS? <span class="text-gradient">WE'VE GOT ANSWERS.</span>
+          </h1>
+          <p class="section-desc" style="font-size: 1.2rem; font-weight: 500; color: var(--poster-navy);">
+            Share feedback, ask a question, or tell us about a project you have in mind.
+          </p>
+        </div>
+
+        <div class="feedback-layout">
+          <div class="feedback-card">
+            <div class="form-header">
+              <h3>Send Feedback</h3>
+              <p>Tell us what you think or what you need. Fields marked with <span style="color:var(--poster-orange);">*</span> are required; rating is optional.</p>
+            </div>
+
+            <div id="formAlert" class="form-alert" role="alert" aria-live="polite"></div>
+
+            <form id="feedbackForm" novalidate>
+              <div class="form-group" id="ratingContainer" style="background: #f8fafc; padding: 1rem 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-light); margin-bottom: 1.25rem;">
+                <label class="form-label" id="ratingLabel" style="margin-bottom: 0.35rem;"><span>Rate Your Experience (Optional)</span></label>
+                <div class="star-rating" id="starRating" role="group" aria-labelledby="ratingLabel">
+                  <button type="button" class="star-btn" data-val="1" aria-label="1 star" aria-pressed="false">★</button>
+                  <button type="button" class="star-btn" data-val="2" aria-label="2 stars" aria-pressed="false">★</button>
+                  <button type="button" class="star-btn" data-val="3" aria-label="3 stars" aria-pressed="false">★</button>
+                  <button type="button" class="star-btn" data-val="4" aria-label="4 stars" aria-pressed="false">★</button>
+                  <button type="button" class="star-btn" data-val="5" aria-label="5 stars" aria-pressed="false">★</button>
+                  <span id="starRatingLabel" style="font-size: 0.9rem; font-weight: 700; color: #d97706; margin-left: 0.5rem;" aria-live="polite">Choose a rating (optional)</span>
+                </div>
+                <input type="hidden" name="feedback_rating" id="feedbackRating" value="0">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group" id="group-name">
+                  <label for="client_name" class="form-label">
+                    <span>Full Name <span class="required-star">*</span></span>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </span>
+                    <input type="text" id="client_name" name="client_name" class="form-input" placeholder="e.g. John Doe" required autocomplete="name">
+                  </div>
+                  <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group" id="group-email">
+                  <label for="client_email" class="form-label">
+                    <span>Email Address <span class="required-star">*</span></span>
+                  </label>
+                  <div class="input-wrapper">
+                    <span class="input-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </span>
+                    <input type="email" id="client_email" name="client_email" class="form-input" placeholder="e.g. john@example.com" required autocomplete="email">
+                  </div>
+                  <span class="error-message" id="emailError"></span>
+                </div>
+              </div>
+
+              <div class="form-group" id="group-service">
+                <label for="service_interest" class="form-label">
+                  <span>Feedback<span class="required-star">*</span></span>
+                </label>
+                <div class="input-wrapper">
+                  <span class="input-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                  </span>
+                  <select id="service_interest" name="service_interest" class="form-select" required>
+                    <option value="" disabled selected>Select a topic...</option>
+                    <option value="General Feedback">General Feedback</option>
+                    <option value="Project Inquiry">Project Inquiry</option>
+                    <option value="Web Development">Web Development (Responsive Websites, Full-Stack, SPAs)</option>
+                    <option value="College & Academic Projects">College &amp; Academic Projects (Final-Year Capstone, Prototypes, Docs)</option>
+                    <option value="Poster & Graphic Design">Poster &amp; Graphic Design (Branding, Logos, Event Posters, Banners)</option>
+                    <option value="Video Editing">Video Editing (Reels, Promos, YouTube, Color Grading)</option>
+                    <option value="Content Writing">Content Writing (Website Copy, Tech Articles, Social Hooks)</option>
+                  </select>
+                </div>
+                <span class="error-message" id="serviceError"></span>
+              </div>
+
+              <div class="form-group" id="group-message">
+                <label for="message" class="form-label">
+                  <span>Your Message <span class="required-star">*</span></span>
+                  <span class="char-counter" id="charCount">0/3000</span>
+                </label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Share your feedback, question, or project details (include your goals and timeline if relevant)..." required maxlength="3000"></textarea>
+                <span class="error-message" id="messageError"></span>
+              </div>
+
+              <div style="margin-top: 0.75rem;">
+                <button type="submit" id="submitBtn" class="btn-whatsapp-submit">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"></path></svg>
+                  <span>Send via WhatsApp</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo" aria-label="GEN-Z WORKS">
+            <img src="images/logo-dark-theme.png" alt="GEN-Z WORKS FREELANCE COMPANY" class="brand-logo-img footer-logo-img">
+          </a>
+          <p>
+            GEN-Z'WORKS is a modern, high-agility digital agency crafted for startups, brands, and ambitious students. We Design, Develop, Create, and Deliver.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com/gen__z__works" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+            <a href="https://wa.me/918754277982" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"></path></svg></a>
+            <a href="mailto:genzworks7@gmail.com" class="social-btn" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="team.html">Team Members</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Core Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#web-dev">Web Development</a></li>
+            <li><a href="services.html#academic-projects">College &amp; Academic Projects</a></li>
+            <li><a href="services.html#poster-design">Poster &amp; Graphic Design</a></li>
+            <li><a href="services.html#video-editing">Video Editing</a></li>
+            <li><a href="services.html#content-writing">Content Writing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Our Team</h4>
+          <ul class="footer-links">
+            <li><a href="team.html#team-members">Meet all seven team members</a></li>
+            <li><a href="team.html#team-structure-title">Departments &amp; team structure</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p style="font-size:0.92rem; margin-bottom: 0.65rem;">
+            <strong>Phone / WhatsApp:</strong><br>
+            <a href="https://wa.me/918754277982" style="color:var(--poster-cyan);">+91 87542 77982</a> | 
+            <a href="tel:+919566980426" style="color:var(--poster-cyan);">+91 95669 80426</a>
+          </p>
+          <p style="font-size:0.92rem; margin-bottom: 0.65rem;">
+            <strong>Email:</strong><br>
+            <a href="mailto:genzworks7@gmail.com" style="color:var(--poster-cyan);">genzworks7@gmail.com</a>
+          </p>
+          <p style="font-size:0.92rem; margin-bottom: 0.75rem;">
+            <strong>Instagram:</strong><br>
+            <a href="https://instagram.com/gen__z__works" target="_blank" rel="noopener noreferrer" style="color:var(--poster-orange);">@gen__z__works</a>
+          </p>
+          <div class="system-status">
+            <span class="status-dot"></span>
+            <span>All systems operational</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright-text">
+          GEN-Z'WORKS &copy; 2026. All Rights Reserved.
+        </div>
+        <div style="font-size:0.85rem; color:var(--text-dim);">
+          Crafted with passion for design and engineering excellence.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

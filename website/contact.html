@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact GEN-Z'WORKS directly for project inquiries, questions, and creative collaborations.">
+  <title>Contact Us | GEN-Z'WORKS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/star-icon.png" type="image/png">
+  <style>
+    .contact-page {
+      padding-top: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-hero {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 2.5rem auto;
+    }
+
+    .contact-hero h1 {
+      margin-bottom: 1rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-card {
+      background: rgba(255,255,255,0.96);
+      border: 1px solid rgba(42, 63, 77, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all var(--transition-normal);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(0, 184, 217, 0.22);
+    }
+
+    .contact-icon {
+      width: 55px;
+      height: 55px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .contact-card:nth-child(1) .contact-icon {
+      background: rgba(0, 184, 217, 0.12);
+      color: var(--color-accent-teal);
+    }
+    .contact-card:nth-child(2) .contact-icon {
+      background: rgba(22, 113, 208, 0.08);
+      color: var(--color-accent-blue);
+    }
+    .contact-card:nth-child(3) .contact-icon {
+      background: rgba(255, 107, 0, 0.08);
+      color: var(--color-accent-orange);
+    }
+
+    .contact-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--poster-navy);
+    }
+
+    .contact-card p,
+    .contact-card a {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .contact-card a:hover {
+      color: #1671d0;
+    }
+
+    .contact-note {
+      background: rgba(0, 184, 217, 0.06);
+      border: 1px solid rgba(0, 184, 217, 0.22);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem 1.75rem;
+      text-align: center;
+      color: var(--poster-navy);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <header class="navbar" id="siteNavbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="GEN-Z WORKS">
+        <img src="images/logo-transparent.png" alt="GEN-Z WORKS FREELANCE COMPANY" class="brand-logo-img">
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link" id="nav-home">Home</a></li>
+          <li><a href="services.html" class="nav-link" id="nav-services">Services</a></li>
+          <li><a href="team.html" class="nav-link" id="nav-team">Team Members</a></li>
+          <li><a href="contact.html" class="nav-link active" id="nav-contact">Contact Us</a></li>
+          <li><a href="feedback.html" class="nav-link" id="nav-feedback">Feedback</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <img src="images/nav-character.png" alt="" class="nav-cta-image" aria-hidden="true">
+        <a href="feedback.html" class="btn btn-primary btn-sm" id="nav-cta-btn">Start a Project</a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <div class="container">
+      <div class="contact-hero">
+        <div class="section-badge">
+          <span>Get in touch</span>
+        </div>
+        <h1>Contact <span class="text-gradient">Us</span></h1>
+        <p class="section-desc">
+          Reach out for project collaboration, design support, technical questions, or feedback. We’re here to help you turn your ideas into impact.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"></path></svg>
+          </div>
+          <h3>Phone / WhatsApp</h3>
+          <p><a href="https://wa.me/918754277982?text=Hello%20GEN-Z'WORKS!%20I%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer">+91 87542 77982</a></p>
+          <p><a href="tel:+919566980426">+91 95669 80426</a></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <h3>Email</h3>
+          <p><a href="mailto:genzworks7@gmail.com">genzworks7@gmail.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </div>
+          <h3>Instagram</h3>
+          <p><a href="https://instagram.com/gen__z__works" target="_blank" rel="noopener noreferrer">@gen__z__works</a></p>
+        </div>
+      </div>
+
+      <div class="contact-note">
+        <strong>Fast support:</strong> We typically respond within 24 hours and help you decide the best path for your project, idea, or feedback.
+      </div>
+
+      <div class="contact-actions">
+        <a href="feedback.html" class="btn btn-primary btn-lg">Send Feedback</a>
+        <a href="https://wa.me/918754277982" class="btn btn-secondary btn-lg" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="copyright-text">
+          GEN-Z'WORKS &copy; 2026. All Rights Reserved.
+        </div>
+        <div class="system-status">
+          <span class="status-dot"></span>
+          <span>We’re available to connect</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
